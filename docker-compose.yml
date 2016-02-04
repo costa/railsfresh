@@ -1,11 +1,11 @@
 web:
-  build: .
-  volumes:
-    - .:/app
-  links:
-  - db
-  ports:
-    - "8000:3000"
+    build: .
+    volumes:
+        - .:/app
+    links:
+        - db
+    ports:
+        - "8000:3000"
 
 db:
-  image: postgres
+    image: postgres
